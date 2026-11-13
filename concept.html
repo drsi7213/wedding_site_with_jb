@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>시안 · 웨딩 촬영 안내</title><link rel="stylesheet" href="style.css"></head>
+<body data-page="concept.html"><main class="wide">
+<header><h1>드레스 &amp; 예복 순서</h1><p>사진은 <code>images</code> 폴더에 표시된 파일명으로 올리면 자동으로 들어가요</p></header>
+<div class="scroll"><div class="board"><div class="cols" id="cols"></div></div></div>
+</main><script src="app.js"></script>
+<script>
+var D=[["1번 · 실내①","드레스 : 미카도 풍성","예복 : 턱시도 + 보타이","푼 웨이브"],
+["2번 · 실내②","드레스 : 레이스","예복 : 화이트 + 리본","반묶음"],
+["3번 · 로드","드레스 : 보트넥 슬림","예복 : 베이지 + 넥타이","포니테일"],
+["4번 · 야외","드레스 : 슬림 (화이트/블랙)","예복 : 턱시도 + 블랙셔츠","번"]];
+var M=[["groom-face","신랑 얼굴","f"],["bride-hair","신부 헤어","f"],["suit","신랑 예복","tall"],["dress","신부 드레스","tall"]];
+function slot(n,k,l,c){var d=document.createElement("div");d.className="slot "+c;d.textContent=l+" ("+n+"-"+k+".jpg)";
+var i=document.createElement("img");i.onerror=function(){i.remove()};i.alt=l;i.src="images/"+n+"-"+k+".jpg";d.appendChild(i);return d}
+var h=document.getElementById("cols");
+D.forEach(function(x,j){var n=j+1,c=document.createElement("div");c.className="col";
+c.innerHTML='<div class="head"><b>'+x[0]+'</b><br>'+x[1]+'<br>'+x[2]+'<br><span class="tag">'+x[3]+'</span></div>';
+var m=document.createElement("div");m.className="main";M.forEach(function(s){m.appendChild(slot(n,s[0],s[1],s[2]))});c.appendChild(m);
+var r=document.createElement("div");r.className="ref";for(var k=1;k<=3;k++)r.appendChild(slot(n,"ref"+k,"참고"+k,"r"));c.appendChild(r);h.appendChild(c)});
+</script></body></html>
