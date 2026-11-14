@@ -1,19 +1,184 @@
-<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>시안 · 웨딩 촬영 안내</title><link rel="stylesheet" href="style.css"></head>
-<body data-page="concept.html"><main class="wide">
-<header><h1>드레스 &amp; 예복 순서</h1><p>사진은 <code>images</code> 폴더에 표시된 파일명으로 올리면 자동으로 들어가요</p></header>
-<div class="scroll"><div class="board"><div class="cols" id="cols"></div></div></div>
-</main><script src="app.js"></script>
-<script>
-var D=[["1번 · 실내①","드레스 : 미카도 풍성","예복 : 턱시도 + 보타이","푼 웨이브"],
-["2번 · 실내②","드레스 : 레이스","예복 : 화이트 + 리본","반묶음"],
-["3번 · 로드","드레스 : 보트넥 슬림","예복 : 베이지 + 넥타이","포니테일"],
-["4번 · 야외","드레스 : 슬림 (화이트/블랙)","예복 : 턱시도 + 블랙셔츠","번"]];
-var M=[["groom-face","신랑 얼굴","f"],["bride-hair","신부 헤어","f"],["suit","신랑 예복","tall"],["dress","신부 드레스","tall"]];
-function slot(n,k,l,c){var d=document.createElement("div");d.className="slot "+c;d.textContent=l+" ("+n+"-"+k+".jpg)";
-var i=document.createElement("img");i.onerror=function(){i.remove()};i.alt=l;i.src="images/"+n+"-"+k+".jpg";d.appendChild(i);return d}
-var h=document.getElementById("cols");
-D.forEach(function(x,j){var n=j+1,c=document.createElement("div");c.className="col";
-c.innerHTML='<div class="head"><b>'+x[0]+'</b><br>'+x[1]+'<br>'+x[2]+'<br><span class="tag">'+x[3]+'</span></div>';
-var m=document.createElement("div");m.className="main";M.forEach(function(s){m.appendChild(slot(n,s[0],s[1],s[2]))});c.appendChild(m);
-var r=document.createElement("div");r.className="ref";for(var k=1;k<=3;k++)r.appendChild(slot(n,"ref"+k,"참고"+k,"r"));c.appendChild(r);h.appendChild(c)});
-</script></body></html>
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>시안 · 웨딩 촬영 안내</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
+<body data-page="concept.html"><main class="wide concept">
+<header class="hero">
+<div class="hero-copy">
+<p class="eyebrow">BB Wedding Room · Shoot Concept</p>
+<h1>우리의<br><em>촬영 시안</em></h1>
+<p class="lede">실버와 화이트, 꽃집 그리고 노을공원까지.<br>네 공간의 빛과 표정을 미리 담았어요.</p>
+<div class="chips hero-chips"><span class="chip">2026.11.18 (수)</span><span class="chip">스튜디오 비비</span><span class="chip">13:00 – 17:00</span></div>
+</div>
+<div class="hero-visual">
+<figure class="hv-a"><img src="images/white-hero.jpg" alt="화이트 공간에서 꽃다발을 든 신랑 신부" loading="eager"><figcaption>White</figcaption></figure>
+<figure class="hv-b"><img src="images/silver-hero.jpg" alt="실버 공간에서 촬영한 흑백 커플 컷" loading="eager"><figcaption>Silver</figcaption></figure>
+<figure class="hv-c"><img src="images/sunset-hero.jpg" alt="노을공원에서 해 질 무렵 찍은 실루엣" loading="eager"><figcaption>Sunset</figcaption></figure>
+</div>
+</header>
+<div class="space-index" aria-label="공간 바로가기">
+<a href="#silver"><b>01</b><span>실내 · 실버</span><em>Silver Room</em></a>
+<a href="#white"><b>02</b><span>실내 · 화이트</span><em>White Room</em></a>
+<a href="#road"><b>03</b><span>로드 · 꽃집</span><em>Flower Shop</em></a>
+<a href="#sunset"><b>04</b><span>야외 · 노을공원</span><em>Sunset Park</em></a>
+</div>
+<article class="space space--silver" id="silver">
+<header class="space-head">
+<div class="space-num">01</div>
+<div class="space-title">
+<p class="kicker">Indoor · Silver</p>
+<h2>실내 · 실버 공간</h2>
+<p class="desc">차가운 메탈 톤 배경 위에 새틴의 윤기를 살리는 공간. 표정과 실루엣이 또렷하게 남아요.</p>
+</div>
+<div class="keywords"><span>미니멀</span><span>시크</span><span>모던</span></div>
+</header>
+<div class="gal gal--four">
+<figure class="shot shot--hero"><img src="images/silver-hero.jpg" alt="실버 공간의 흑백 신랑 신부 클로즈업" loading="lazy"><figcaption>Black &amp; White</figcaption></figure>
+<figure class="shot"><img src="images/silver-2.jpg" alt="스트랩 새틴 드레스를 입은 신부" loading="lazy"><figcaption>Satin Line</figcaption></figure>
+<figure class="shot"><img src="images/silver-3.jpg" alt="회색 배경 앞에 앉아 있는 신부" loading="lazy"><figcaption>Signature Sitting</figcaption></figure>
+<figure class="shot"><img src="images/silver-4.jpg" alt="화이트 배경에서 부케를 든 신부" loading="lazy"><figcaption>White on White</figcaption></figure>
+</div>
+<div class="space-body">
+<dl class="style-list">
+<div><dt>드레스</dt><dd>스트랩 슬림이나 오프숄더 새틴. 주름보다 실루엣이 깔끔한 드레스가 잘 어울려요.</dd></div>
+<div><dt>헤어</dt><dd>푼 웨이브를 매끈하게 빗어 넘기거나 낮은 번. 정돈된 결이 새틴과 잘 맞아요.</dd></div>
+<div><dt>예복</dt><dd>블랙 턱시도에 화이트 셔츠. 보타이를 더하면 더 클래식해져요.</dd></div>
+<div><dt>소품</dt><dd>작은 부케와 반지. 소품은 최소로 두고 표정에 집중해요.</dd></div>
+<div><dt>포즈</dt><dd>정면 응시, 옆얼굴, 손 클로즈업. 웃음은 조금 참으면 더 시크해 보여요.</dd></div>
+</dl>
+<aside class="palette">
+<p class="palette-label">Palette</p>
+<div class="swatches" aria-hidden="true"><span style="background:#111214"></span><span style="background:#4b4f55"></span><span style="background:#8e949c"></span><span style="background:#c9ced5"></span><span style="background:#f2f1ef"></span></div>
+<div class="hexes"><span>#111214</span><span>#4B4F55</span><span>#8E949C</span><span>#C9CED5</span><span>#F2F1EF</span></div>
+<blockquote>“웃음은 조금 참고,<br>눈빛은 조금 더.”</blockquote>
+<p class="tip">조명이 차가운 공간이라 붉은 립보다 로지톤 블러시가 잘 어울려요. 흑백 컷은 이 공간에서 꼭 한 장 남겨요.</p>
+</aside>
+</div>
+</article>
+<article class="space space--white" id="white">
+<header class="space-head">
+<div class="space-num">02</div>
+<div class="space-title">
+<p class="kicker">Indoor · White</p>
+<h2>실내 · 화이트 공간</h2>
+<p class="desc">커튼과 창가의 자연광이 그대로 들어오는 공간. 베일과 볼가운이 가장 사랑스럽게 보여요.</p>
+</div>
+<div class="keywords"><span>클래식</span><span>로맨틱</span><span>내추럴</span></div>
+</header>
+<div class="gal gal--three">
+<figure class="shot shot--hero"><img src="images/white-hero.jpg" alt="화이트 공간에서 꽃다발을 함께 든 신랑 신부" loading="lazy"><figcaption>Signature Close-up</figcaption></figure>
+<figure class="shot"><img src="images/white-2.jpg" alt="창가에서 꽃다발을 든 신부" loading="lazy"><figcaption>Window Light</figcaption></figure>
+<figure class="shot"><img src="images/white-3.jpg" alt="베이지 수트를 입은 신랑과 볼가운 신부" loading="lazy"><figcaption>Ivory &amp; White</figcaption></figure>
+</div>
+<div class="space-body">
+<dl class="style-list">
+<div><dt>드레스</dt><dd>오프숄더 볼가운이나 드레이프. 레이스보다 매트한 새틴이 빛을 부드럽게 받아요.</dd></div>
+<div><dt>헤어</dt><dd>반묶음에 베일을 살짝 얹기. 푼 웨이브를 내리면 창가 컷이 더 로맨틱해져요.</dd></div>
+<div><dt>예복</dt><dd>아이보리·베이지 수트 또는 클래식 블랙. 신부 드레스 톤에 맞춰 골라요.</dd></div>
+<div><dt>소품</dt><dd>화이트 부케, 베일, 진주 이어링. 꽃은 흰색과 연두 줄기로 맞춰요.</dd></div>
+<div><dt>포즈</dt><dd>창가 자연광, 백허그, 이마 맞대기, 베일 클로즈업. 많이 웃어도 예쁜 공간이에요.</dd></div>
+</dl>
+<aside class="palette">
+<p class="palette-label">Palette</p>
+<div class="swatches" aria-hidden="true"><span style="background:#ffffff"></span><span style="background:#f7f2ea"></span><span style="background:#e3d8cb"></span><span style="background:#c2b2a2"></span><span style="background:#2f2a27"></span></div>
+<div class="hexes"><span>#FFFFFF</span><span>#F7F2EA</span><span>#E3D8CB</span><span>#C2B2A2</span><span>#2F2A27</span></div>
+<blockquote>“빛이 가장 좋은 창가를<br>먼저 차지하기.”</blockquote>
+<p class="tip">화이트 공간은 노출이 많아요. 톤업크림은 목과 팔 위주로 얇게 바르고, 신랑 정장에 묻지 않게 조심해요.</p>
+</aside>
+</div>
+</article>
+<article class="space space--road" id="road">
+<header class="space-head">
+<div class="space-num">03</div>
+<div class="space-title">
+<p class="kicker">Road · Flower Shop</p>
+<h2>로드 · 꽃집</h2>
+<p class="desc">꽃집 앞 골목과 플라워 월을 배경으로 걷는 컷. 표정이 자연스럽게 풀리는 구간이에요.</p>
+</div>
+<div class="keywords"><span>러블리</span><span>내추럴</span><span>스냅</span></div>
+</header>
+<div class="gal gal--three">
+<figure class="shot shot--hero"><img src="images/road-hero.jpg" alt="핑크빛 꽃 배경에서 웃고 있는 신부" loading="lazy"><figcaption>Flower Wall</figcaption></figure>
+<figure class="shot"><img src="images/road-2.jpg" alt="꽃집 앞을 걸어가는 신부" loading="lazy"><figcaption>Walking</figcaption></figure>
+<figure class="shot"><img src="images/road-3.jpg" alt="꽃다발을 든 신부와 신랑" loading="lazy"><figcaption>Bouquet Detail</figcaption></figure>
+</div>
+<div class="space-body">
+<dl class="style-list">
+<div><dt>드레스</dt><dd>슬림이나 홀터, 또는 미디 길이. 걷고 앉기 편한 실루엣이 좋아요.</dd></div>
+<div><dt>헤어</dt><dd>포니테일이나 반묶음. 꽃 한 송이를 꽂아도 사랑스러워요.</dd></div>
+<div><dt>예복</dt><dd>네이비·브라운 수트나 셔츠만. 너무 격식 차리지 않아도 잘 어울려요.</dd></div>
+<div><dt>소품</dt><dd>계절 꽃 부케와 미니 꽃다발. 꽃집 앞이니까 꽃을 적극적으로 활용해요.</dd></div>
+<div><dt>포즈</dt><dd>걷다가 뒤돌아보기, 꽃집 앞에서 웃기, 부케 클로즈업.</dd></div>
+</dl>
+<aside class="palette">
+<p class="palette-label">Palette</p>
+<div class="swatches" aria-hidden="true"><span style="background:#fbf3ed"></span><span style="background:#efc9c4"></span><span style="background:#d98e95"></span><span style="background:#9aa585"></span><span style="background:#6c4f47"></span></div>
+<div class="hexes"><span>#FBF3ED</span><span>#EFC9C4</span><span>#D98E95</span><span>#9AA585</span><span>#6C4F47</span></div>
+<blockquote>“걷다가,<br>한 번씩 돌아보기.”</blockquote>
+<p class="tip">꽃집은 색이 많아요. 드레스는 아이보리, 부케는 핑크·살구로 톤을 맞추면 사진이 깔끔해져요.</p>
+</aside>
+</div>
+</article>
+<article class="space space--sunset" id="sunset">
+<header class="space-head">
+<div class="space-num">04</div>
+<div class="space-title">
+<p class="kicker">Outdoor · Sunset Park</p>
+<h2>야외 · 노을공원</h2>
+<p class="desc">억새와 들판, 해 질 무렵의 골든아워. 실루엣과 바람이 주인공이 되는 마지막 구간이에요.</p>
+</div>
+<div class="keywords"><span>골든아워</span><span>실루엣</span><span>자유로운</span></div>
+</header>
+<div class="gal gal--four">
+<figure class="shot shot--hero"><img src="images/sunset-hero.jpg" alt="노을을 배경으로 키스하는 신랑 신부 실루엣" loading="lazy"><figcaption>Golden Hour</figcaption></figure>
+<figure class="shot"><img src="images/sunset-2.jpg" alt="노을공원 바람의 언덕에 서 있는 신랑 신부" loading="lazy"><figcaption>Wind Hill</figcaption></figure>
+<figure class="shot"><img src="images/sunset-3.jpg" alt="들판에서 손을 잡고 뛰는 신랑 신부" loading="lazy"><figcaption>Run</figcaption></figure>
+<figure class="shot"><img src="images/sunset-4.jpg" alt="노을공원에서 손을 잡고 걸어가는 뒷모습" loading="lazy"><figcaption>Silhouette</figcaption></figure>
+</div>
+<div class="space-body">
+<dl class="style-list">
+<div><dt>드레스</dt><dd>얇은 레이어나 플리츠. 바람에 날리는 소재가 노을과 잘 어울려요.</dd></div>
+<div><dt>헤어</dt><dd>번이나 묶음 머리. 야외는 바람이 많아서 흐트러져도 괜찮은 스타일이 편해요.</dd></div>
+<div><dt>예복</dt><dd>블랙 또는 그레이 수트. 구두보다 더비 슈즈가 잔디 위에서 안정적이에요.</dd></div>
+<div><dt>소품</dt><dd>부케 하나면 충분해요. 담요나 랜턴은 선택, 들고 다니기 가벼운 걸로.</dd></div>
+<div><dt>포즈</dt><dd>손잡고 걷기, 뒷모습, 실루엣 키스, 들판에서 뛰기. 움직이는 컷이 잘 나와요.</dd></div>
+</dl>
+<aside class="palette">
+<p class="palette-label">Palette</p>
+<div class="swatches" aria-hidden="true"><span style="background:#fff0dc"></span><span style="background:#f4bd87"></span><span style="background:#d9825f"></span><span style="background:#8d6350"></span><span style="background:#3c3833"></span></div>
+<div class="hexes"><span>#FFF0DC</span><span>#F4BD87</span><span>#D9825F</span><span>#8D6350</span><span>#3C3833</span></div>
+<blockquote>“해가 지기 전 10분이<br>가장 예뻐요.”</blockquote>
+<p class="tip">노을 시간은 짧아요. 도착하자마자 골든아워 컷부터 남기고, 하늘은 5분 단위로 달라진다는 것만 기억해요.</p>
+</aside>
+</div>
+</article>
+<article class="runorder">
+<header class="ro-head">
+<p class="kicker">Run Order</p>
+<h2>촬영 순서</h2>
+<p>실내 2벌 → 로드 1벌 → 야외 1벌. 헤어는 푼 웨이브에서 반묶음, 포니테일, 번으로 이어가요.</p>
+</header>
+<ol class="ro-steps">
+<li style="--tone:#8e949c"><b>01</b><strong>실내 · 실버</strong><span>새틴 슬림 드레스</span><em>푼 웨이브</em></li>
+<li style="--tone:#a08b78"><b>02</b><strong>실내 · 화이트</strong><span>볼가운 + 베일</span><em>반묶음</em></li>
+<li style="--tone:#c27b84"><b>03</b><strong>로드 · 꽃집</strong><span>슬림 · 미디 드레스</span><em>포니테일</em></li>
+<li style="--tone:#c47a4f"><b>04</b><strong>야외 · 노을공원</strong><span>플리츠 드레스</span><em>번</em></li>
+</ol>
+<p class="ro-note">현장 피팅룸 상황에 따라 순서는 바뀔 수 있어요. 첫 드레스는 푼 웨이브로 시작하고, 드레스가 바뀔 때마다 작가님과 다시 상의해요.</p>
+</article>
+<article class="refs">
+<header class="refs-head">
+<p class="kicker">Reference</p>
+<h2>레퍼런스 노트</h2>
+<p>아래 레퍼런스의 무드와 포즈를 참고했어요. 실제 촬영 결과와는 달라질 수 있어요.</p>
+</header>
+<ul>
+<li><a href="https://www.instagram.com/bbwedding_room/" target="_blank" rel="noopener">@bbwedding_room</a><span>실내 화이트 · 시그니처 클로즈업</span></li>
+<li><a href="https://www.instagram.com/laforet__withyou/" target="_blank" rel="noopener">@laforet__withyou</a><span>드레스 실루엣 · 스튜디오 포즈</span></li>
+<li><a href="https://www.instagram.com/iwedding_official/" target="_blank" rel="noopener">@iwedding_official</a><span>창가 자연광 · 내추럴 포즈</span></li>
+<li><a href="https://www.instagram.com/makemywedding_official/" target="_blank" rel="noopener">@makemywedding_official</a><span>로드 스냅 · 움직이는 컷</span></li>
+<li><span class="ref-name">Marry Antre blog</span><span>노을공원 로케이션 · 골든아워</span></li>
+</ul>
+</article>
+<footer class="concept-foot">
+<p>스튜디오 비비 · 2026.11.18</p>
+<a href="checklist.html">체크리스트 확인하기 →</a>
+</footer>
+</main><script src="app.js"></script></body></html>
