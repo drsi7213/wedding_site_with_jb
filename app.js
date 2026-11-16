@@ -5,7 +5,12 @@ P.forEach(function(p){var a=document.createElement("a");a.href=p[0];a.textConten
 document.body.insertBefore(n,document.body.firstChild);
 document.querySelectorAll("input[data-k]").forEach(function(c){
 var k="wd:"+c.dataset.k;
-try{c.checked=localStorage.getItem(k)==="1"}catch(e){}
+try{
+var saved=localStorage.getItem(k),version=c.dataset.update;
+if(version&&localStorage.getItem(k+":update")!==version){
+localStorage.setItem(k,c.checked?"1":"0");localStorage.setItem(k+":update",version);
+}else if(saved!==null){c.checked=saved==="1"}
+}catch(e){}
 c.addEventListener("change",function(){try{localStorage.setItem(k,c.checked?"1":"0")}catch(e){}});
 });
 function broken(img){var s=img.closest(".shot");if(s)s.classList.add("is-empty")}
