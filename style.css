@@ -173,3 +173,9 @@ nav{flex-wrap:wrap}
 .shoot-pages img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px}
 .shoot-plan section{padding:clamp(12px,3vw,24px)}
 @media(max-width:480px){nav{gap:2px}nav a{padding:6px 8px;font-size:13px}}
+
+/* 본식 준비 */
+details{margin:12px 0;padding:10px 12px;border:1px solid var(--line);border-radius:10px}
+summary{cursor:pointer;font-weight:700}
+details ul,details ol{margin-top:10px}
+.tl .t{flex-basis:84px;font-size:13px}
