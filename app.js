@@ -1,5 +1,5 @@
 (function(){
-var P=[["index.html","본식 일정"],["wedding-checklist.html","본식 체크"],["honeymoon.html","신혼여행"],["mauritius-guide.html","숙소 비교"],["shoot-schedule.html","촬영 일정"],["checklist.html","촬영 체크"],["items.html","촬영 준비물"],["concept.html","레퍼런스"],["shoot-plan.html","시안"]];
+var P=[["index.html","본식 일정"],["wedding-checklist.html","본식 체크"],["honeymoon.html","신혼여행"],["shoot-schedule.html","촬영 일정"],["checklist.html","촬영 체크"],["items.html","촬영 준비물"],["concept.html","레퍼런스"],["shoot-plan.html","시안"]];
 var cur=document.body.dataset.page,n=document.createElement("nav");
 P.forEach(function(p){var a=document.createElement("a");a.href=p[0];a.textContent=p[1];if(p[0]===cur)a.className="on";n.appendChild(a)});
 document.body.insertBefore(n,document.body.firstChild);
