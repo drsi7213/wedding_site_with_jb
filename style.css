@@ -187,3 +187,6 @@ details ul,details ol{margin-top:10px}
 /* 신혼여행 사진 모음 */
 .trip-photos{margin:24px 0 28px;padding-bottom:24px;border-bottom:1px solid var(--line)}.trip-photos h3{margin:24px 0 8px}.trip-photo-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.trip-photo-grid figure{margin:0;min-width:0}.trip-photo-grid figure>a{display:block;border-radius:12px;overflow:hidden;background:var(--slot)}.trip-photo-grid img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}.trip-photo-grid figcaption{font-size:14px;line-height:1.6;padding-top:8px;overflow-wrap:anywhere}.trip-photo-grid details{padding:6px 8px;margin:8px 0 0;font-size:14px}.trip-photo-grid summary{font-size:14px;font-weight:400}.trip-photo-grid details p{margin:6px 0}.trip-photo-grid a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 @media(max-width:900px){.trip-photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:600px){.trip-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.trip-photo-grid figcaption{font-size:14px}}
+
+/* 호주 신혼여행 일정 */
+.australia-plan{scroll-margin-top:76px}.travel-guide .trip-itinerary{min-width:0;width:100%}.trip-itinerary th:first-child{width:100px;white-space:nowrap}.trip-itinerary td{line-height:1.75}
