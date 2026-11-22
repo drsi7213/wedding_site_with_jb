@@ -190,3 +190,6 @@ details ul,details ol{margin-top:10px}
 
 /* 호주 신혼여행 일정 */
 .australia-plan{scroll-margin-top:76px}.travel-guide .trip-itinerary{min-width:0;width:100%}.trip-itinerary th:first-child{width:100px;white-space:nowrap}.trip-itinerary td{line-height:1.75}
+
+/* 일정별 식사와 식당 비교 */
+.travel-guide a{color:var(--accent);text-underline-offset:3px}.travel-guide .trip-itinerary{min-width:680px}.trip-itinerary td:nth-child(2){width:42%}.trip-itinerary td:nth-child(3){width:43%}#restaurants table{min-width:880px}#restaurants th:first-child{min-width:145px}#restaurants td:last-child{white-space:nowrap}
